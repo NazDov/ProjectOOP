@@ -8,7 +8,7 @@ public class ExtMemoryMicroSDCard implements MemoryCard {
 
     private String memoryCapacity;
 
-    public ExtMemoryMicroSDCard(String capacity){
+    protected ExtMemoryMicroSDCard(String capacity){
         memoryCapacity=capacity;
     }
 

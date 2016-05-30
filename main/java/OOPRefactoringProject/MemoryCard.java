@@ -6,5 +6,7 @@ package OOPRefactoringProject;
 public interface MemoryCard {
 
 
+    MemoryCard NULL = new NullMemoryCard();
+
     String getMemory();
 }

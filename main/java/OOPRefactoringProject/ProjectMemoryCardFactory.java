@@ -8,10 +8,10 @@ public class ProjectMemoryCardFactory implements MemoryCardFactory {
 
 
     public MemoryCard get8GBMemoryCard() {
-        return null;
+        return new ExtMemoryMicroSDCard("8GB");
     }
 
     public MemoryCard get16GBMemoryCard() {
-        return null;
+        return new ExtMemoryMicroSDCard("16GB");
     }
 }

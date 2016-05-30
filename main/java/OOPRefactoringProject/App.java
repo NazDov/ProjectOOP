@@ -14,7 +14,9 @@ public class App
 
         MemoryCard memoryCard=memoryCardFactory.get16GBMemoryCard() ;
 
-        System.out.println(memoryCard.getMemory());
+        ExtendHDD extHDD = new ExtendInnerMemory(new MediaPlayerInstalledHDD(), new Install16GBMemoryCommand(memoryCardFactory));
+
+        extHDD.start();
 
     }
 }
